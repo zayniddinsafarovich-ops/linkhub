@@ -6,23 +6,23 @@ import { AuthProvider } from "@/components/features/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-      title: "Personal Link Hub",
-      description: "Your personalized link hub and portfolio",
-};
+  title: "Personal Link Hub",
+    description: "Your personalized link hub and portfolio",
+    };
 
-export default function RootLayout({
+    export default function RootLayout({
       children,
-}: Readonly<{
-      children: React.ReactNode;
-}>) {
-      return (
+      }: Readonly<{
+        children: React.ReactNode;
+        }>) {
+          return (
               <html lang="en">
                     <body className={inter.className}>
                             <AuthProvider>
-                                {children}
-                            </AuthProvider>
-                    </body>
-              </html>
-            );
-}
-</html
+                                      {children}
+                                              </AuthProvider>
+                                                    </body>
+                                                        </html>
+                                                          );
+                                                          }
+                                                          
